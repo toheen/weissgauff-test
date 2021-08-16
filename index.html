@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/src/bulma.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<div id="message" class="notification is-hidden">
+    <button class="delete"></button>
+    <span id="message-text">Проверка</span>
+</div>
+
+<div class="section">
+
+    <div class="block">
+        <div class="buttons">
+            <a class="button is-primary" href="/">
+                <strong>Добавить запись</strong>
+            </a>
+            <a class="button is-light" href="/list.php">
+                Список записей
+            </a>
+        </div>
+    </div>
+
+    <div class="block">
+            <form action="/add.php">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Ваше имя">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" name="phone" placeholder="Телефон">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" name="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="field file has-name is-fullwidth">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="file" multiple>
+                        <span class="file-cta">
+                            <span class="file-label">
+                                Загрузите файл(ы)…
+                            </span>
+                        </span>
+                        <span class="file-name"></span>
+                    </label>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button type="submit" class="button is-primary">
+                            <strong>Отправить</strong>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+</div>
+
+<script src="src/script.js"></script>
+</body>
+</html>

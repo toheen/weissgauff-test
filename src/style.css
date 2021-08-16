@@ -1,0 +1,9 @@
+#message {
+    display: block;
+    width: 33%;
+    height: auto;
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    z-index: 1;
+}
